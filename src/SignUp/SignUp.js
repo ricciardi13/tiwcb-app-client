@@ -14,7 +14,7 @@ export default class SignUp extends React.Component {
 
     render(){
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} className="signup-form">
                 <h2>Sign Up</h2>
                 <fieldset>
                     <legend>Sign Up</legend>

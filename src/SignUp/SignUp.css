@@ -1,0 +1,3 @@
+.signup-form fieldset {
+    grid-template-rows: 80px 80px 80px;
+}

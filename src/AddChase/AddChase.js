@@ -16,7 +16,7 @@ export default class AddChase extends React.Component {
         return(
             <main>
                 <h2>Add A Chase</h2>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} className="add-chase-form">
                     <fieldset>
                         <legend>Today I Was Chased By</legend>
                         <label htmlFor="chased-by-input">What Chased You?</label>
@@ -25,6 +25,8 @@ export default class AddChase extends React.Component {
                         <input type="number" id="distance-input" name="distance" />
                         <label htmlFor="time-input">How Long Were You Chased For?</label>
                         <input type="number" id="time-input" name="time" />
+                        <label htmlFor="date-input">When Were You Chased?</label>
+                        <input type="date" id="date-input" name="date" />
                         <button type="reset" id="reset-button" >Reset</button>
                         <button type="submit" id="submit-button" >Submit</button>
                     </fieldset>

@@ -14,9 +14,9 @@ export default class Dashboard extends React.Component {
                     <table>
                         <tr>
                             <th></th>
-                            <th>Miles</th>
-                            <th>Time</th>
-                            <th>Average Speed</th>
+                            <th>Distance (miles)</th>
+                            <th>Time (minutes)</th>
+                            <th>Average Speed (MPH)</th>
                         </tr>
                         <tr>
                             <td>This Week</td>
@@ -90,13 +90,15 @@ export default class Dashboard extends React.Component {
                     <table>
                         <tr>
                             <th>Date</th>
-                            <th>Miles</th>
-                            <th>Time</th>
-                            <th>Average Speed</th>
+                            <th>Chased By</th>
+                            <th>Distance (miles)</th>
+                            <th>Time (minutes)</th>
+                            <th>Average Speed (MPH)</th>
                         </tr>
                         {store.map(chase =>
                             <tr>
                                 <td>{chase.date}</td>
+                                <td>{chase.chasedBy}</td>
                                 <td>{chase.distance}</td>
                                 <td>{chase.time}</td>
                                 <td>{(chase.distance / (chase.time / 60)).toFixed(2)}</td>
