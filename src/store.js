@@ -1,4 +1,4 @@
-export default [
+const store = [
     {
         id: '1',
         date: '12/01/2020',
@@ -30,3 +30,5 @@ export default [
         time: '22.7',
     }
 ]
+
+export default store
