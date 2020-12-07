@@ -1,0 +1,23 @@
+form {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+form fieldset {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 80px 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+form fieldset input {
+    height: 80%;
+}
+
+form fieldset button {
+    width: 60%;
+    height: 80px;
+    margin: 40px auto;
+}
+
