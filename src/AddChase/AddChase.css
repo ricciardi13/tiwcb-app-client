@@ -4,20 +4,30 @@ form {
 }
 
 form fieldset {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 80px 80px 80px 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
+form fieldset label, input {
+    display: block;
+    width: 188px;
+    margin: 20px auto;
+}
+
 form fieldset input {
-    height: 80%;
+    height: 64px;
 }
 
 form fieldset button {
     width: 60%;
-    height: 80px;
+    height: 64px;
     margin: 40px auto;
+}
+
+form fieldset #submit-button {
+    margin-top: 0;
 }
 

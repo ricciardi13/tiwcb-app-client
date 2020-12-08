@@ -5,3 +5,7 @@ main section table {
 main section table th {
     padding: 10px;
 }
+
+main section table td {
+    padding: 5px;
+}
